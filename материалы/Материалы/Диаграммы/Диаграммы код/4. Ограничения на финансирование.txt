@@ -1,0 +1,19 @@
+graph LR
+  %% Настройки стилей
+  classDef sanction fill:#ff000033,stroke:#ff5555,stroke-width:2px,color:white,font-size:14px
+  classDef decision fill:#00aa0033,stroke:#55ff55,stroke-width:2px,color:white
+  classDef solution fill:#0066ff33,stroke:#5555ff,stroke-width:2px,color:white
+
+  %% Содержание диаграммы
+  A[Санкция: Ограничения на финансирование<br>российских компаний из-за рубежа] --> B{Решение}
+  B --> C1[Краудфандинг<br>на криптоплатформах]
+  B --> C2[Получение DeFi-займов]
+  B --> C3[Создание и продажа NFT]
+
+  %% Применение стилей
+  class A sanction
+  class B decision
+  class C1,C2,C3 solution
+
+  %% Настройка соединений
+  linkStyle default stroke:#ffffff,stroke-width:2px,arrowhead:vee

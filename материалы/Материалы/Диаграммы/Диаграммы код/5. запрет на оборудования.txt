@@ -1,0 +1,19 @@
+graph LR
+  %% Стилевое оформление
+  classDef sanction fill:#ffebee,stroke:#ef5350,stroke-width:2px,color:#d32f2f,font-size:14px,font-weight:bold
+  classDef decision fill:#e8f5e9,stroke:#66bb6a,stroke-width:2px,color:#2e7d32
+  classDef solution fill:#e3f2fd,stroke:#42a5f5,stroke-width:2px,color:#1565c0
+
+  %% Содержание диаграммы
+  A[Санкция:<br>Запрет поставок<br>майнингового оборудования] --> B{Стратегии}
+  B --> C1[Закупка через<br>третьи страны]
+  B --> C2[Облачный<br>майнинг]
+  B --> C3[Перенос ферм<br>за рубеж]
+
+  %% Применение стилей
+  class A sanction
+  class B decision
+  class C1,C2,C3 solution
+
+  %% Настройка связей
+  linkStyle default stroke:#78909c,stroke-width:2px,arrowhead:vee
